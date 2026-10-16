@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cours informatique | Hardware & Bits</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+header {
+    text-align: center;
+    padding: 55px 20px;
+    background: linear-gradient(135deg, #111827, #312e81);
+    border-bottom: 2px solid #6366f1;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: #a5b4fc;
+}
+
+header p {
+    margin-top: 10px;
+    color: #cbd5e1;
+}
+
+main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 18px;
+}
+
+section {
+    background: #151c2e;
+    padding: 24px;
+    margin-bottom: 22px;
+    border-radius: 14px;
+    border: 1px solid #293449;
+}
+
+h2 {
+    color: #818cf8;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #c4b5fd;
+    margin: 15px 0 8px;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+code, .example {
+    display: block;
+    background: #090e1a;
+    padding: 14px;
+    margin-top: 12px;
+    border-radius: 8px;
+    color: #86efac;
+    overflow-wrap: anywhere;
+}
+
+strong {
+    color: #c4b5fd;
+}
+
+.discord {
+    text-align: center;
+    background: #312e81;
+    padding: 30px 20px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+}
+
+.discord a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background: #5865F2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.discord a:hover {
+    background: #4752c4;
+}
+
+footer {
+    text-align: center;
+    color: #94a3b8;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1> Les bases de l'informatique</h1>
+    <p>Le hardware, les bits et les calculs informatiques</p>
+</header>
+
+<main>
+
+<section>
+    <h2>1. Qu'est-ce que le hardware ?</h2>
+    <p>
+        Le <strong>hardware</strong>, aussi appelé matériel informatique,
+        désigne toutes les pièces physiques d'un ordinateur.
+        Ce sont les composants que l'on peut toucher.
+    </p>
+
+    <h3>Les composants principaux</h3>
+    <ul>
+        <li><strong>CPU (processeur) :</strong> exécute les instructions et les calculs(GHz, cœurs, threads, cache).</li>
+        <li><strong>GPU (carte graphique) :</strong> traite les images et les graphismes(VRAM, fréquence, performances graphiques).</li>
+        <li><strong>RAM :</strong> mémoire temporaire utilisée pendant le fonctionnement du PC (Go, MHz, DDR4, DDR5).</li>
+        <li><strong>SSD / HDD :</strong> stocke les fichiers et les logiciels (Go, To, SATA, NVMe, Mo/s).</li>
+        <li><strong>Carte mère :</strong> relie les différents composants (socket, chipset, PCIe, ports M.2).</li>
+        <li><strong>Alimentation :</strong> fournit l'énergie électrique à l'ordinateur.(Watt)</li>
+		<li><strong>Refroidissemnt:</strong> Évacue la chaleur du processeur et des autres composant (sventilateurs, radiateur, pâte thermique).</li>
+		<li><strong>Pile CMOS :</strong> Contribue à conserver l'heure et certains paramètres du BIOS.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>2. Comprendre les bits et les octets</h2>
+    <p>
+        Un <strong>bit (b)</strong> est la plus petite unité d'information
+        informatique. Il peut avoir deux valeurs : <strong>0 ou 1</strong>.
+    </p>
+    <p>
+        Un <strong>octet (o)</strong> est composé de 8 bits.
+        Il sert notamment à mesurer la taille des fichiers.
+    </p>
+
+    <div class="example">
+        1 octet = 8 bits<br>
+        2 octets = 16 bits<br>
+        4 octets = 32 bits<br>
+        8 octets = 64 bits
+    </div>
+
+    <p>
+        Attention : le <strong>b minuscule</strong> désigne un bit,
+        tandis que le <strong>B majuscule</strong> désigne un byte,
+        généralement équivalent à un octet.
+    </p>
+</section>
+
+<section>
+    <h2>3. Les calculs de conversion</h2>
+
+    <h3>Convertir des octets en bits</h3>
+    <p>Il faut multiplier le nombre d'octets par 8.</p>
+    <div class="example">
+        5 octets × 8 = 40 bits
+    </div>
+
+    <h3>Convertir des bits en octets</h3>
+    <p>Il faut diviser le nombre de bits par 8.</p>
+    <div class="example">
+        64 bits ÷ 8 = 8 octets
+    </div>
+
+    <h3>Les unités de stockage</h3>
+    <p>
+        Dans les unités décimales courantes :
+    </p>
+    <div class="example">
+        1 Ko = 1 000 octets<br>
+        1 Mo = 1 000 Ko<br>
+        1 Go = 1 000 Mo<br>
+        1 To = 1 000 Go
+    </div>
+
+    <p>
+        En informatique, on rencontre aussi les unités binaires :
+        1 Kio = 1 024 octets, 1 Mio = 1 024 Kio,
+        1 Gio = 1 024 Mio.
+    </p>
+</section>
+
+<section>
+<section>
+    <h2>4. Comment un PC démarre ?</h2>
+
+    <p>
+        Quand tu appuies sur le bouton Power, plusieurs étapes se
+        déroulent avant que Windows soit prêt à être utilisé.
+    </p>
+
+    <h3>1.  Alimentation</h3>
+    <p>
+        L'alimentation fournit l'énergie électrique aux composants
+        et permet à la carte mère de lancer le démarrage.
+    </p>
+
+    <h3>2.  BIOS / UEFI</h3>
+    <p>
+        Le BIOS ou UEFI est le premier logiciel important exécuté
+        au démarrage. Il initialise le matériel et prépare la suite.
+    </p>
+
+    <h3>3.  POST</h3>
+    <p>
+        Le POST effectue des vérifications initiales du matériel :
+        processeur, mémoire RAM et autres composants essentiels.
+    </p>
+
+    <h3>4.  Recherche du système</h3>
+    <p>
+        L'UEFI cherche un périphérique de démarrage, par exemple
+        un SSD contenant Windows.
+    </p>
+
+    <h3>5.  Bootloader</h3>
+    <p>
+        Le programme de démarrage charge les éléments nécessaires
+        au lancement du système d'exploitation.
+    </p>
+
+    <h3>6.  Chargement de Windows</h3>
+    <p>
+        Windows charge son noyau, initialise les pilotes et démarre
+        les services nécessaires au fonctionnement du PC.
+    </p>
+
+    <h3>7.  Bureau prêt</h3>
+    <p>
+        L'écran de connexion ou le bureau apparaît. Les applications
+        configurées au démarrage peuvent ensuite se lancer.
+    </p>
+
+    <div class="example">
+        Power → BIOS/UEFI → POST → SSD → Bootloader
+        → Windows → Bureau
+    </div>
+
+
+</section>
+
+
+<section>
+    <h2> À retenir</h2>
+    <ul>
+        <li>Le hardware correspond aux composants physiques.</li>
+        <li>Le processeur exécute les instructions.</li>
+        <li>1 octet = 8 bits.</li>
+        <li>Pour passer des octets aux bits, on multiplie par 8.</li>
+        <li>Pour passer des bits aux octets, on divise par 8.</li>
+        <li>Le binaire utilise uniquement les chiffres 0 et 1.</li>
+		<li>le BIOS/UEFI initialise le matériel,
+        le bootloader lance le système et Windows prend ensuite le contrôle
+        de l'ordinateur.</li>
+    </ul>
+</section>
+
+<section class="discord">
+    <h2> Rejoins notre serveur Discord</h2>
+    <p>
+        Envie de parler informatique, hardware, PC et technologie
+        avec la communauté ?
+    </p>
+
+    <!-- Remplace le lien ci-dessous par l'invitation de ton serveur -->
+    <a href="https://discord.gg/Vk47rW3Bcq"
+       target="_blank" rel="noopener noreferrer">
+		discord.gg/1020sec
+    </a>
+</section>
+
+</main>
+
+<footer>
+    Cours d'initiation à l'informatique
+</footer>
+
+</body>
+</html>
